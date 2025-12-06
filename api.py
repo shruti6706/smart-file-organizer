@@ -8,7 +8,9 @@ from organizer import FileOrganizer
 app = Flask(__name__)
 
 # Default target folder - uses user's home directory
-TARGET_FOLDER = str(Path.home() / "Desktop")
+# Falls back to home directory if Desktop doesn't exist
+desktop_path = Path.home() / "Desktop"
+TARGET_FOLDER = str(desktop_path if desktop_path.exists() else Path.home())
 
 
 @app.route('/organize', methods=['POST'])

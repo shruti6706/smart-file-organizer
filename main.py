@@ -8,7 +8,9 @@ from ui import GlassmorphicUI
 from api import app
 
 # Default target folder - uses user's home directory
-TARGET_FOLDER = str(Path.home() / "Desktop")
+# Falls back to home directory if Desktop doesn't exist
+desktop_path = Path.home() / "Desktop"
+TARGET_FOLDER = str(desktop_path if desktop_path.exists() else Path.home())
 
 
 def main():
