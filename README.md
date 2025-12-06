@@ -124,7 +124,7 @@ This project is licensed under the MIT License.
 
 ## 👤 Author
 
-Created with ❤️ by [Your Name]
+Created with ❤️ by Shruti
 
 ## ⚠️ Disclaimer
 
