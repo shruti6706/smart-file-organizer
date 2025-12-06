@@ -40,8 +40,5 @@ desktop.ini
 .coverage
 htmlcov/
 
-# Kiro specs (optional - remove if you want to share specs)
-.kiro/
-
 # Test folders
 TestOrganizer/
